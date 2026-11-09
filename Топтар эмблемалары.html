@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Топтар эмблемалары</title>
+<style>
+:root{--bg:#fbf1dc;--ink:#3b2a1a;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;font-family:"Trebuchet MS",Verdana,sans-serif;color:var(--ink);background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70'%3E%3Cg fill='none' stroke='%23b4532a' stroke-width='3' opacity='.14'%3E%3Cpath d='M35 8c-14 0-20 12-13 20s18 4 16-5-12-7-11 0'/%3E%3Cpath d='M35 62c14 0 20-12 13-20s-18-4-16 5 12 7 11 0'/%3E%3C/g%3E%3C/svg%3E")}
+.band{height:14px;background:repeating-linear-gradient(90deg,#b4532a 0 14px,#d9a521 14px 28px,#2e9e5e 28px 42px)}
+h1{text-align:center;font-size:clamp(22px,5vw,32px);color:#8f2a18;margin:14px 10px 4px}
+.sub{text-align:center;margin:0 10px 8px;font-size:15px}
+.g{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;padding:10px 14px 36px;max-width:1280px;margin:0 auto}
+.c{flex:1 1 340px;max-width:400px;background:rgba(255,250,240,.85);border:3px solid #d9a521;border-radius:26px;padding:10px;box-shadow:0 10px 24px rgba(80,50,10,.22);transition:transform .25s}
+.c:hover{transform:translateY(-5px)}
+.c{cursor:pointer}.c svg{width:100%;display:block}.art,.nm{transform-box:fill-box;transform-origin:center;transition:opacity .5s,transform .5s}.nm{opacity:0;transform:scale(.6)}.open .nm{opacity:1;transform:scale(1)}.open .art{opacity:0;transform:scale(.6)}.c:not(.open) .art{animation:bob 2.4s ease-in-out infinite}@keyframes bob{50%{transform:scale(1.06)}}
+@media (prefers-reduced-motion:reduce){.c,.art,.nm{transition:none}.c:not(.open) .art{animation:none}}
+</style></head><body>
+<div class="band"></div>
+<h1>Физика · Механикадағы күштер</h1>
+<p class="sub">Эмблеманы бас: топ мүшелері ашылады</p>
+<div class="g" id="g"></div>
+<script>
+var D=[
+{n:'АУЫРЛЫҚ КҮШІ',c:['#0a2766','#1e6fd9','#e3b43a'],s:['Ақыметқали Зере','Аманқызы Нұрай','Бақытжанұлы Әли','Бақыткалиева Дина','Бейсенбай Еркежан','Дәуітбекова Мунира']},
+{n:'СЕРПІМДІЛІК КҮШІ',c:['#54238f','#1fb8c9','#c9d1da'],s:['Ержан Ералы','Жеңіс Айназ','Жұмағалиев Нұржігіт','Қадирова Мөлдір','Қабдолла Дінмұхамед']},
+{n:'ҮЙКЕЛІС КҮШІ',c:['#175f36','#17b3ae','#e3b43a'],s:['Қамыза Айгерім','Нұрлан Нұрай','Нұрланқызы Айша','Омархан Азиз','Тұмарова Аяулым']}];
+function arw(x1,y1,x2,y2,c){var a=Math.atan2(y2-y1,x2-x1),h=8;return '<path d="M'+x1+' '+y1+'L'+x2+' '+y2+'" stroke="'+c+'" stroke-width="4" stroke-linecap="round"/><path d="M'+x2+' '+y2+'L'+(x2-h*Math.cos(a-.5))+' '+(y2-h*Math.sin(a-.5))+'L'+(x2-h*Math.cos(a+.5))+' '+(y2-h*Math.sin(a+.5))+'Z" fill="'+c+'"/>'}
+function ill(i,c){var a=c[0],b=c[1],g=c[2];
+if(i==0)return '<circle cx="200" cy="90" r="23" fill="'+b+'" stroke="'+a+'" stroke-width="3"/><path d="M186 82q8-9 18-2q-2 10-12 9zM203 96q8-3 10 5q-6 7-12 2z" fill="#7fd08a"/>'+arw(236,76,236,106,g)+'<circle cx="160" cy="312" r="13" fill="'+b+'" stroke="'+a+'" stroke-width="3"/><path d="M160 282v12M150 285v8M170 285v8" stroke="'+a+'" stroke-width="3" stroke-linecap="round" opacity=".6"/>'+arw(236,298,236,334,g)+'<rect x="180" y="332" width="40" height="5" rx="2" fill="'+a+'" opacity=".7"/>';
+if(i==1)return '<path d="M150 90h10l6-12 10 24 10-24 10 24 10-24 10 24 6-12h10" fill="none" stroke="'+a+'" stroke-width="4" stroke-linejoin="round"/>'+arw(145,90,126,90,b).replace(/stroke-width="4"/,'stroke-width="4"')+arw(255,90,274,90,b)+'<circle cx="150" cy="316" r="7" fill="'+a+'"/><circle cx="250" cy="316" r="7" fill="'+a+'"/><path d="M157 316q43 24 86 0" fill="none" stroke="'+b+'" stroke-width="5" stroke-linecap="round"/>'+arw(143,316,124,316,g)+arw(257,316,276,316,g);
+return '<rect x="170" y="70" width="60" height="30" rx="6" fill="'+b+'" stroke="'+a+'" stroke-width="3"/><path d="M140 80h20M136 90h24" stroke="'+a+'" stroke-width="3" stroke-linecap="round" opacity=".6"/>'+arw(240,85,276,85,a)+'<path d="M140 318h120" stroke="'+a+'" stroke-width="5"/><path d="M146 318l-8 12M166 318l-8 12M186 318l-8 12M206 318l-8 12M226 318l-8 12M246 318l-8 12" stroke="'+b+'" stroke-width="3"/>'+arw(262,306,224,306,g)+'<rect x="172" y="284" width="56" height="22" rx="5" fill="'+b+'" stroke="'+a+'" stroke-width="3"/>'}
+function big(i,c){var a=c[0],b=c[1],g=c[2];
+if(i==0)return '<circle cx="200" cy="240" r="48" fill="'+b+'" stroke="'+a+'" stroke-width="4"/><path d="M169 224q14-18 34-6q-3 18-24 17zM207 247q18-6 22 10q-12 14-26 5z" fill="#7fd08a"/><circle cx="200" cy="154" r="15" fill="'+g+'" stroke="'+a+'" stroke-width="3"/><path d="M200 124v10M190 128v7M210 128v7" stroke="'+a+'" stroke-width="3" stroke-linecap="round" opacity=".6"/>'+arw(258,150,258,205,a);
+if(i==1)return '<rect x="112" y="168" width="12" height="64" rx="3" fill="'+a+'"/><path d="M124 200h12l7-18 12 36 12-36 12 36 12-36 12 36 7-18h12" fill="none" stroke="'+a+'" stroke-width="5" stroke-linejoin="round"/><rect x="236" y="176" width="46" height="48" rx="7" fill="'+b+'" stroke="'+a+'" stroke-width="3"/>'+arw(200,258,150,258,g)+arw(200,258,250,258,b);
+return '<rect x="166" y="196" width="70" height="50" rx="8" fill="'+b+'" stroke="'+a+'" stroke-width="3"/><path d="M120 248h160" stroke="'+a+'" stroke-width="6"/><path d="M126 248l-9 14M148 248l-9 14M170 248l-9 14M192 248l-9 14M214 248l-9 14M236 248l-9 14M258 248l-9 14" stroke="'+b+'" stroke-width="3"/><path d="M130 212h20M126 226h24" stroke="'+a+'" stroke-width="3" stroke-linecap="round" opacity=".6"/>'+arw(244,216,284,216,a)+arw(162,236,124,236,g)}
+function em(i){var d=D[i],c=d.c,u='-'+i,nm='',k,y0=200-(d.s.length-1)*13.5+6;
+for(k=0;k<d.s.length;k++)nm+='<text x="200" y="'+(y0+k*27)+'" text-anchor="middle" font-size="19" font-weight="700" fill="#1d1d2b" font-family="Trebuchet MS,Verdana,sans-serif">'+d.s[k]+'</text>';
+return '<svg viewBox="0 0 400 400" role="img" aria-label="'+d.n+' эмблемасы"><defs><radialGradient id="r'+u+'" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="'+c[1]+'"/><stop offset=".6" stop-color="'+c[0]+'"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient><radialGradient id="f'+u+'" cx=".4" cy=".3" r=".9"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3e6c4"/></radialGradient><linearGradient id="m'+u+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6c9"/><stop offset=".5" stop-color="'+c[2]+'"/><stop offset="1" stop-color="#7a5a14"/></linearGradient><filter id="s'+u+'" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-opacity=".4"/></filter><path id="p'+u+'" d="M40 200A160 160 0 0 1 360 200"/></defs>'+
+'<circle cx="200" cy="200" r="192" fill="url(#r'+u+')" stroke="url(#m'+u+')" stroke-width="7" filter="url(#s'+u+')"/>'+
+'<circle cx="200" cy="200" r="148" fill="none" stroke="'+c[2]+'" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round"/>'+
+'<circle cx="200" cy="200" r="141" fill="url(#f'+u+')" stroke="url(#m'+u+')" stroke-width="5"/>'+
+'<ellipse cx="130" cy="70" rx="90" ry="26" fill="#fff" opacity=".2" transform="rotate(-28 130 70)"/>'+
+'<text font-size="27" font-weight="700" fill="#fff" stroke="rgba(0,0,0,.45)" stroke-width="4" paint-order="stroke" letter-spacing="2" font-family="Trebuchet MS,Verdana,sans-serif"><textPath href="#p'+u+'" startOffset="50%" text-anchor="middle">'+d.n+'</textPath></text>'+
+'<path d="M200 380l-7-9 7-9 7 9z" fill="url(#m'+u+')"/><path d="M26 200l9-6 9 6-9 6zM356 200l9-6 9 6-9 6z" fill="url(#m'+u+')"/>'+'<g class="art">'+big(i,c)+'</g><g class="nm">'+ill(i,c)+nm+'</g></svg>'}
+var h='';for(var i=0;i<3;i++)h+='<div class="c">'+em(i)+'</div>';document.getElementById('g').innerHTML=h;var cs=document.querySelectorAll('.c');for(var j=0;j<cs.length;j++){(function(e){e.tabIndex=0;e.setAttribute('role','button');e.setAttribute('aria-expanded','false');function t(){e.classList.toggle('open');e.setAttribute('aria-expanded',e.classList.contains('open'))}e.onclick=t;e.onkeydown=function(k){if(k.key=='Enter'||k.key==' '){k.preventDefault();t()}}})(cs[j])}
+</script></body></html>
